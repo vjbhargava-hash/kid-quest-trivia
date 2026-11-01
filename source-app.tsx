@@ -154,7 +154,120 @@ const FINAL = {
   answer: "Who are the Wright Brothers?",
 };
 
+const KQ2_ROUND1: Category[] = [
+  {
+    name: "Dinosaurs",
+    clues: [
+      { value: 100, clue: "This giant meat-eating dinosaur's name means tyrant lizard king.", answer: "What is Tyrannosaurus rex (T. rex)?" },
+      { value: 200, clue: "This plant-eating dinosaur had three horns on its face and a big bony frill.", answer: "What is Triceratops?" },
+      { value: 300, clue: "This plant-eater had two rows of large bony plates along its back and spikes on its tail.", answer: "What is Stegosaurus?" },
+      { value: 400, clue: "Scientists who dig up and study fossils, like dinosaur bones, are called this.", answer: "What are paleontologists?" },
+      { value: 500, clue: "About 66 million years ago, one of these space rocks slammed into Earth near Mexico, helping wipe out the dinosaurs.", answer: "What is an asteroid?" },
+    ],
+  },
+  {
+    name: "Maps & Countries",
+    clues: [
+      { value: 100, clue: "This is the largest and deepest ocean on Earth.", answer: "What is the Pacific Ocean?" },
+      { value: 200, clue: "On a map, this European country is shaped like a boot.", answer: "What is Italy?" },
+      { value: 300, clue: "This is the longest river in Africa, flowing north through Egypt.", answer: "What is the Nile?" },
+      { value: 400, clue: "This huge city is the capital of Japan.", answer: "What is Tokyo?" },
+      { value: 500, clue: "This is the largest country in the world by area.", answer: "What is Russia?" },
+    ],
+  },
+  {
+    name: "Human Body",
+    clues: [
+      { value: 100, clue: "This organ in your chest pumps blood all around your body.", answer: "What is the heart?" },
+      { value: 200, clue: "You breathe air in and out with these two spongy organs.", answer: "What are the lungs?" },
+      { value: 300, clue: "This bone in your thigh is the longest bone in the human body.", answer: "What is the femur?" },
+      { value: 400, clue: "Including wisdom teeth, a full set of adult teeth has this many.", answer: "What is 32?" },
+      { value: 500, clue: "It covers you from head to toe and is the largest organ of the human body.", answer: "What is skin?" },
+    ],
+  },
+  {
+    name: "Colors & Art",
+    clues: [
+      { value: 100, clue: "Mix blue paint and yellow paint and you get this color.", answer: "What is green?" },
+      { value: 200, clue: "Leonardo da Vinci painted this famous portrait of a woman with a mysterious smile.", answer: "What is the Mona Lisa?" },
+      { value: 300, clue: "In painting, the three primary colors are red, yellow, and this.", answer: "What is blue?" },
+      { value: 400, clue: "This Dutch artist painted The Starry Night.", answer: "Who is Vincent van Gogh?" },
+      { value: 500, clue: "Michelangelo painted the ceiling of this famous chapel in Vatican City.", answer: "What is the Sistine Chapel?" },
+    ],
+  },
+  {
+    name: "Superheroes",
+    clues: [
+      { value: 100, clue: "Peter Parker swings through New York City as this web-slinging hero.", answer: "Who is Spider-Man?" },
+      { value: 200, clue: "This Marvel god of thunder swings a hammer named Mjolnir.", answer: "Who is Thor?" },
+      { value: 300, clue: "Batman protects this dark and gloomy city.", answer: "What is Gotham City?" },
+      { value: 400, clue: "T'Challa is the king of Wakanda and this superhero.", answer: "Who is Black Panther?" },
+      { value: 500, clue: "Superman was born on this faraway planet.", answer: "What is Krypton?" },
+    ],
+  },
+];
+
+const KQ2_ROUND2: Category[] = [
+  {
+    name: "Oceans & Sea Life",
+    clues: [
+      { value: 200, clue: "This ocean giant is the largest animal known to have ever lived.", answer: "What is the blue whale?" },
+      { value: 400, clue: "This clever sea creature has eight arms and three hearts.", answer: "What is an octopus?" },
+      { value: 600, clue: "Clownfish like Nemo make their homes among the stinging tentacles of these animals.", answer: "What are sea anemones?" },
+      { value: 800, clue: "The world's largest coral reef system lies off the coast of Australia and has this name.", answer: "What is the Great Barrier Reef?" },
+      { value: 1000, clue: "The deepest known spot in the ocean, the Challenger Deep, is in this Pacific Ocean trench.", answer: "What is the Mariana Trench?" },
+    ],
+  },
+  {
+    name: "Inventions",
+    clues: [
+      { value: 200, clue: "In 1876, Alexander Graham Bell received a patent for this device that lets people talk over long distances.", answer: "What is the telephone?" },
+      { value: 400, clue: "Thomas Edison is famous for creating a long-lasting version of this glowing glass invention.", answer: "What is the light bulb?" },
+      { value: 600, clue: "Around 1440, Johannes Gutenberg built this machine, which made books much faster to produce.", answer: "What is the printing press?" },
+      { value: 800, clue: "In 1895, Wilhelm Röntgen discovered these rays that let doctors see bones inside the body.", answer: "What are X-rays?" },
+      { value: 1000, clue: "In 1928, Alexander Fleming discovered this first antibiotic, made by a mold.", answer: "What is penicillin?" },
+    ],
+  },
+  {
+    name: "Weather & Earth",
+    clues: [
+      { value: 200, clue: "These balls or lumps of ice sometimes fall from thunderstorms.", answer: "What is hail?" },
+      { value: 400, clue: "This kind of mountain can erupt, sending out hot lava and ash.", answer: "What is a volcano?" },
+      { value: 600, clue: "On the border of Nepal and China, this is the tallest mountain above sea level on Earth.", answer: "What is Mount Everest?" },
+      { value: 800, clue: "This is the name for the layer of gases, including the air we breathe, that surrounds Earth.", answer: "What is the atmosphere?" },
+      { value: 1000, clue: "A rainbow forms when sunlight is bent and split into colors by these tiny things in the air.", answer: "What are raindrops (water droplets)?" },
+    ],
+  },
+  {
+    name: "Holidays Around the World",
+    clues: [
+      { value: 200, clue: "Kids carve jack-o'-lanterns and go trick-or-treating on this holiday, October 31.", answer: "What is Halloween?" },
+      { value: 400, clue: "This U.S. holiday on the fourth Thursday of November celebrates a harvest feast, often with turkey.", answer: "What is Thanksgiving?" },
+      { value: 600, clue: "This Jewish festival of lights lasts eight nights, with candles lit on a menorah.", answer: "What is Hanukkah?" },
+      { value: 800, clue: "This Hindu festival of lights is celebrated with small oil lamps called diyas and fireworks.", answer: "What is Diwali?" },
+      { value: 1000, clue: "The Chinese zodiac names each year after one of this many animals, in a repeating cycle.", answer: "What is 12?" },
+    ],
+  },
+  {
+    name: "Words & Spelling",
+    clues: [
+      { value: 200, clue: "This word is the opposite of hot.", answer: "What is cold?" },
+      { value: 400, clue: "Words that mean the same thing, like big and large, are called these.", answer: "What are synonyms?" },
+      { value: 600, clue: "A word that reads the same forward and backward, like racecar, is called this.", answer: "What is a palindrome?" },
+      { value: 800, clue: "This vowel is the most commonly used letter in English writing.", answer: "What is E?" },
+      { value: 1000, clue: "This long word names words that imitate sounds, like buzz, sizzle, and boom.", answer: "What is onomatopoeia?" },
+    ],
+  },
+];
+
+const KQ2_FINAL = {
+  category: "Speed Champions",
+  clue: "Diving through the sky at more than 200 miles per hour, this bird of prey is the fastest animal on Earth.",
+  answer: "What is the peregrine falcon?",
+};
+
 const GAME_SETS: GameSet[] = [
+  { id: "kq2", title: "Kid Quest #2", ageRange: "ages 8–15", round1: KQ2_ROUND1, round2: KQ2_ROUND2, final: KQ2_FINAL },
   { id: "kq1", title: "Kid Quest #1", ageRange: "ages 8–15", round1: ROUND1, round2: ROUND2, final: FINAL },
   // { id: "kq2", title: "Kid Quest #2", ageRange: "ages 6–9", round1: [...], round2: [...], final: {...} },
 ];
