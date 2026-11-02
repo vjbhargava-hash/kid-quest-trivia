@@ -283,8 +283,8 @@ function formatTime(total: number): string {
   return m + ":" + (s < 10 ? "0" : "") + String(s);
 }
 
-type MusicMode = "lobby" | "thinking" | "break" | "podium";
-type Sfx = "correct" | "buzz";
+type MusicMode = "lobby" | "thinking" | "finalThinking" | "break" | "podium" | "quiet";
+type Sfx = "correct" | "buzz" | "reveal" | "dd" | "flourish";
 type GameProps = {
   fill: boolean;
   onStart: () => void;
@@ -313,36 +313,60 @@ function ticks(count: number): Note[] {
   return out;
 }
 
-const LOOPS: Record<"lobby" | "thinking" | "break", Loop> = {
+function tickTock(count: number, hi: number, lo: number): Note[] {
+  const out: Note[] = [];
+  for (let i = 0; i < count; i++) {
+    out.push([i % 2 === 0 ? hi : lo, 0.2]);
+    out.push([null, 0.8]);
+  }
+  return out;
+}
+
+// All loops are original compositions synthesized live (no copyrighted melodies).
+const LOOPS: Record<"lobby" | "thinking" | "finalThinking" | "break", Loop> = {
+  // Board: light, calm, bouncy major-key noodle at low volume.
   lobby: {
-    bpm: 132,
+    bpm: 100,
     voices: [
       {
-        wave: "square",
-        gain: 0.05,
+        wave: "triangle",
+        gain: 0.035,
         notes: [
-          [72, 0.5], [76, 0.5], [79, 0.5], [76, 0.5], [77, 0.5], [81, 0.5], [79, 1],
-          [74, 0.5], [77, 0.5], [81, 0.5], [77, 0.5], [76, 0.5], [79, 0.5], [72, 1],
+          [72, 1], [76, 0.5], [79, 0.5], [77, 1], [74, 1],
+          [76, 1], [72, 0.5], [74, 0.5], [71, 1], [null, 1],
+          [69, 1], [72, 0.5], [76, 0.5], [74, 1], [77, 1],
+          [76, 0.5], [74, 0.5], [72, 1], [67, 1], [null, 1],
         ],
       },
-      { wave: "triangle", gain: 0.12, notes: seq([48, 55, 53, 55, 50, 57, 55, 48], 1) },
+      { wave: "sine", gain: 0.06, notes: seq([48, 55, 52, 55, 43, 50, 47, 50, 45, 52, 48, 52, 41, 48, 43, 47], 1) },
     ],
   },
+  // Clue open: tense minor ostinato over a tick-tock clock.
   thinking: {
-    bpm: 104,
+    bpm: 120,
     voices: [
-      { wave: "sine", gain: 0.07, notes: seq([69, 72, 76, 72, 67, 71, 74, 71, 65, 69, 72, 69, 67, 71, 74, 79], 0.5) },
-      { wave: "triangle", gain: 0.1, notes: seq([45, 43, 41, 43], 2) },
-      { wave: "triangle", gain: 0.025, notes: ticks(8) },
+      { wave: "sine", gain: 0.045, notes: seq([69, 72, 71, 72, 69, 72, 71, 68, 69, 72, 74, 72, 71, 68, 64, 68], 0.5) },
+      { wave: "triangle", gain: 0.07, notes: seq([45, 45, 44, 44], 2) },
+      { wave: "square", gain: 0.012, notes: tickTock(8, 100, 93) },
     ],
   },
-  break: {
-    bpm: 84,
+  // Final Quest: slower, deeper, suspenseful with a heartbeat pulse and clock.
+  finalThinking: {
+    bpm: 90,
     voices: [
-      { wave: "sine", gain: 0.04, notes: seq([60, 57], 4) },
-      { wave: "sine", gain: 0.04, notes: seq([64, 60], 4) },
-      { wave: "sine", gain: 0.04, notes: seq([67, 64], 4) },
-      { wave: "triangle", gain: 0.06, notes: [[79, 1], [76, 1], [74, 1], [72, 1], [76, 1.5], [74, 0.5], [72, 2]] },
+      { wave: "sine", gain: 0.04, notes: [[62, 1.5], [65, 0.5], [64, 1], [61, 1], [62, 1.5], [69, 0.5], [68, 1], [65, 1]] },
+      { wave: "triangle", gain: 0.08, notes: [[38, 0.25], [null, 0.25], [38, 0.25], [null, 1.25], [37, 0.25], [null, 0.25], [37, 0.25], [null, 1.25], [38, 0.25], [null, 0.25], [38, 0.25], [null, 1.25], [41, 0.25], [null, 0.25], [40, 0.25], [null, 1.25]] },
+      { wave: "square", gain: 0.01, notes: tickTock(8, 98, 91) },
+    ],
+  },
+  // Breaks: mellow chill pads.
+  break: {
+    bpm: 76,
+    voices: [
+      { wave: "sine", gain: 0.03, notes: seq([60, 57, 53, 55], 4) },
+      { wave: "sine", gain: 0.03, notes: seq([64, 60, 57, 59], 4) },
+      { wave: "sine", gain: 0.025, notes: seq([67, 64, 60, 62], 4) },
+      { wave: "triangle", gain: 0.035, notes: [[79, 2], [76, 1], [74, 1], [72, 2], [null, 2], [77, 1], [76, 1], [74, 2], [71, 2], [null, 2]] },
     ],
   },
 };
@@ -454,8 +478,11 @@ export default function App() {
     busRef.current = null;
     playingRef.current = null;
     if (bus && ctx) {
-      bus.gain.setTargetAtTime(0, ctx.currentTime, 0.05);
-      window.setTimeout(() => bus.disconnect(), 400);
+      const now = ctx.currentTime;
+      bus.gain.cancelScheduledValues(now);
+      bus.gain.setValueAtTime(bus.gain.value, now);
+      bus.gain.linearRampToValueAtTime(0, now + 0.35);
+      window.setTimeout(() => bus.disconnect(), 700);
     }
   }, []);
 
@@ -483,13 +510,16 @@ export default function App() {
       if (playingRef.current === mode && mode !== "podium") return;
       stopLoop();
       playingRef.current = mode;
+      if (mode === "quiet") return;
       const bus = ctx.createGain();
-      bus.gain.value = 1;
+      const t0 = ctx.currentTime;
+      bus.gain.setValueAtTime(0, t0);
+      bus.gain.linearRampToValueAtTime(1, t0 + 0.35);
       bus.connect(master);
       busRef.current = bus;
       if (mode === "podium") {
         const t = ctx.currentTime + 0.05;
-        const fan: Note[] = [[67, 0.25], [72, 0.25], [76, 0.25], [79, 0.75], [76, 0.25], [79, 1.5]];
+        const fan: Note[] = [[67, 0.25], [72, 0.25], [76, 0.25], [79, 0.75], [76, 0.25], [79, 0.5], [81, 0.25], [83, 0.25], [84, 2]];
         let at = t;
         for (const [m, b] of fan) {
           if (m !== null) {
@@ -498,7 +528,9 @@ export default function App() {
           }
           at += b * 0.4;
         }
-        playTone(ctx, bus, mtof(48), t, 2.6, "triangle", 0.1);
+        playTone(ctx, bus, mtof(48), t, 1.4, "triangle", 0.1);
+        playTone(ctx, bus, mtof(43), t + 1.4, 1.2, "triangle", 0.1);
+        playTone(ctx, bus, mtof(48), t + 2.4, 2, "triangle", 0.1);
         return;
       }
       const loop = LOOPS[mode];
@@ -609,10 +641,45 @@ export default function App() {
     if (!ctx || !master || !musicOnRef.current) return;
     const t = ctx.currentTime + 0.02;
     if (s === "correct") {
-      [72, 76, 79, 84].forEach((m: number, i: number) => playTone(ctx, master, mtof(m), t + i * 0.09, 0.35, "sine", 0.18));
+      [72, 76, 79, 84].forEach((m: number, i: number) => playTone(ctx, master, mtof(m), t + i * 0.09, 0.35, "sine", 0.14));
+      playTone(ctx, master, mtof(88), t + 0.36, 0.6, "sine", 0.06);
+    } else if (s === "buzz") {
+      // soft, kid-friendly "bwomp": two descending sliding tones
+      const bw = (start: number, f0: number, f1: number, dur: number) => {
+        const osc = ctx.createOscillator();
+        const g = ctx.createGain();
+        osc.type = "triangle";
+        osc.frequency.setValueAtTime(f0, start);
+        osc.frequency.exponentialRampToValueAtTime(f1, start + dur);
+        g.gain.setValueAtTime(0.0001, start);
+        g.gain.exponentialRampToValueAtTime(0.16, start + 0.03);
+        g.gain.exponentialRampToValueAtTime(0.0001, start + dur);
+        osc.connect(g);
+        g.connect(master);
+        osc.start(start);
+        osc.stop(start + dur + 0.05);
+        osc.onended = () => { osc.disconnect(); g.disconnect(); };
+      };
+      bw(t, 233, 196, 0.32);
+      bw(t + 0.34, 196, 131, 0.6);
+    } else if (s === "reveal") {
+      playTone(ctx, master, mtof(79), t, 0.25, "sine", 0.08);
+      playTone(ctx, master, mtof(84), t + 0.12, 0.5, "sine", 0.07);
+    } else if (s === "dd") {
+      const fan: Note[] = [[60, 0.12], [64, 0.12], [67, 0.12], [72, 0.3], [67, 0.12], [72, 0.6]];
+      let at = t;
+      for (const [m, d] of fan) {
+        if (m !== null) {
+          playTone(ctx, master, mtof(m), at, d * 1.4, "square", 0.04);
+          playTone(ctx, master, mtof(m + 12), at, d * 1.4, "sine", 0.06);
+        }
+        at += d;
+      }
+      playTone(ctx, master, mtof(48), t, 1.4, "triangle", 0.1);
     } else {
-      playTone(ctx, master, 110, t, 0.45, "sawtooth", 0.06);
-      playTone(ctx, master, 104, t, 0.45, "square", 0.03);
+      // flourish: quick upward sparkle run + chord
+      [67, 69, 71, 72, 74, 76, 79].forEach((m: number, i: number) => playTone(ctx, master, mtof(m), t + i * 0.05, 0.2, "sine", 0.06));
+      [72, 76, 79].forEach((m: number) => playTone(ctx, master, mtof(m), t + 0.38, 0.8, "triangle", 0.05));
     }
   }, []);
 
@@ -839,9 +906,23 @@ function Game(props: GameProps) {
     let m: MusicMode = "lobby";
     if (phase === "break1" || phase === "break2") m = "break";
     else if (phase === "podium") m = "podium";
-    else if (viewingClue || phase === "finalQ") m = "thinking";
+    else if (phase === "finalQ") m = "finalThinking";
+    else if (phase === "finalAns" || phase === "finalReveal") m = "quiet";
+    else if (viewingClue) m = clueStep === "clue" ? "thinking" : "quiet";
     onModeProp(m);
-  }, [phase, viewingClue, onModeProp]);
+  }, [phase, viewingClue, clueStep, onModeProp]);
+  const onSfxProp = props.onSfx;
+  const prevRef = useRef({ phase, clueStep, viewingClue });
+  useEffect(() => {
+    const prev = prevRef.current;
+    prevRef.current = { phase, clueStep, viewingClue };
+    if (phase !== prev.phase && (phase === "round1" || phase === "round2" || phase === "finalCat")) onSfxProp("flourish");
+    else if (phase === "finalAns" && prev.phase === "finalQ") onSfxProp("reveal");
+    if (viewingClue && clueStep !== prev.clueStep || viewingClue && !prev.viewingClue) {
+      if (clueStep === "ddIntro") onSfxProp("dd");
+      else if (clueStep === "answer" && prev.clueStep === "clue") onSfxProp("reveal");
+    }
+  }, [phase, clueStep, viewingClue, onSfxProp]);
   const [adjustMode, setAdjustMode] = useSaved("kq1_adjustMode", false);
   const adjustScore = (i: number, d: number) =>
     setScores((prev) => {
