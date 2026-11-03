@@ -266,7 +266,233 @@ const KQ2_FINAL = {
   answer: "What is the peregrine falcon?",
 };
 
+const FAM1_ROUND1: Category[] = [
+  {
+    name: "Totally 80s & 90s",
+    clues: [
+      { value: 100, clue: "This Nintendo handheld came to North America in 1989 bundled with the game Tetris.", answer: "What is the Game Boy?" },
+      { value: 200, clue: "In this 1985 movie, Marty McFly travels back in time in a DeLorean.", answer: "What is Back to the Future?" },
+      { value: 300, clue: "These furry, big-eyed talking toys were the must-have holiday gift of 1998.", answer: "What are Furbies?" },
+      { value: 400, clue: "This yellow animated family from Springfield got its own half-hour TV series in 1989.", answer: "Who are the Simpsons?" },
+      { value: 500, clue: "Invented by a Hungarian professor, this six-colored twisting cube puzzle was a craze of the early 1980s.", answer: "What is the Rubik's Cube?" },
+    ],
+  },
+  {
+    name: "Cartoons Now",
+    clues: [
+      { value: 100, clue: "This blue heeler puppy lives in Brisbane, Australia, with her little sister Bingo.", answer: "Who is Bluey?" },
+      { value: 200, clue: "In Gravity Falls, Dipper Pines spends the summer in Oregon with this twin sister.", answer: "Who is Mabel?" },
+      { value: 300, clue: "Miles Morales swings into action in this 2018 Oscar-winning animated film.", answer: "What is Spider-Man: Into the Spider-Verse?" },
+      { value: 400, clue: "In The Amazing World of Gumball, Gumball Watterson is this kind of animal.", answer: "What is a cat?" },
+      { value: 500, clue: "In Avatar: The Last Airbender, Aang is the last surviving member of this nation.", answer: "What are the Air Nomads?" },
+    ],
+  },
+  {
+    name: "Board & Card Games",
+    clues: [
+      { value: 100, clue: "In this board game, you buy properties like Boardwalk and Park Place.", answer: "What is Monopoly?" },
+      { value: 200, clue: "In this card game, you must shout its name when you have just one card left.", answer: "What is UNO?" },
+      { value: 300, clue: "In the board game Clue, the reverend (or Mr.) character is named after this color.", answer: "What is green?" },
+      { value: 400, clue: "In chess, this is the only piece that can jump over other pieces.", answer: "What is the knight?" },
+      { value: 500, clue: "In Scrabble, you earn a 50-point bonus for playing this many tiles in one turn.", answer: "What is seven?" },
+    ],
+  },
+  {
+    name: "Numbers Game",
+    clues: [
+      { value: 100, clue: "This is how many sides a hexagon has.", answer: "What is six?" },
+      { value: 200, clue: "This is how many minutes are in two hours.", answer: "What is 120?" },
+      { value: 300, clue: "The Roman numeral X stands for this number.", answer: "What is ten?" },
+      { value: 400, clue: "A baker's dozen is this many.", answer: "What is 13?" },
+      { value: 500, clue: "A right angle measures this many degrees.", answer: "What is 90?" },
+    ],
+  },
+  {
+    name: "Tech Then & Now",
+    clues: [
+      { value: 100, clue: "Apple introduced this touchscreen phone in 2007.", answer: "What is the iPhone?" },
+      { value: 200, clue: "Before streaming, families rented movies on these tapes from stores like Blockbuster.", answer: "What are VHS tapes?" },
+      { value: 300, clue: "Sony's portable cassette player, launched in 1979, let you take music anywhere.", answer: "What is the Walkman?" },
+      { value: 400, clue: "This kind of 1990s internet connection screeched and beeped while it connected over a phone line.", answer: "What is dial-up?" },
+      { value: 500, clue: "Launched in 2001, this Apple music player promised 1,000 songs in your pocket.", answer: "What is the iPod?" },
+    ],
+  },
+];
+
+const FAM1_ROUND2: Category[] = [
+  {
+    name: "Throwback TV",
+    clues: [
+      { value: 200, clue: "Ross, Rachel, Monica, Chandler, Joey, and Phoebe are the six pals in this sitcom.", answer: "What is Friends?" },
+      { value: 400, clue: "Will Smith played a teen from West Philadelphia who moves in with relatives in this 1990s sitcom.", answer: "What is The Fresh Prince of Bel-Air?" },
+      { value: 600, clue: "In this 1990s show, teenagers morphed into colorful heroes and piloted giant Zords.", answer: "What is Mighty Morphin Power Rangers?" },
+      { value: 800, clue: "This big purple dinosaur sang I love you, you love me on kids' TV.", answer: "Who is Barney?" },
+      { value: 1000, clue: "In Full House, the Olsen twins shared the role of this youngest Tanner daughter.", answer: "Who is Michelle?" },
+    ],
+  },
+  {
+    name: "Gaming Now",
+    clues: [
+      { value: 200, clue: "In Among Us, the player secretly sabotaging the crew is called this.", answer: "What is the impostor?" },
+      { value: 400, clue: "In this Epic Games battle royale, players jump out of the Battle Bus.", answer: "What is Fortnite?" },
+      { value: 600, clue: "In Animal Crossing: New Horizons, this raccoon-like businessman runs Resident Services on your island.", answer: "Who is Tom Nook?" },
+      { value: 800, clue: "On this platform, players create and play games like Adopt Me! and Brookhaven.", answer: "What is Roblox?" },
+      { value: 1000, clue: "In The Legend of Zelda games, the hero players control is named this.", answer: "Who is Link?" },
+    ],
+  },
+  {
+    name: "Fairy Tales & Fables",
+    clues: [
+      { value: 200, clue: "She left a glass slipper behind at the royal ball.", answer: "Who is Cinderella?" },
+      { value: 400, clue: "In Aesop's fable, a slow and steady tortoise wins a race against this animal.", answer: "What is the hare?" },
+      { value: 600, clue: "This wooden puppet's nose grows every time he tells a lie.", answer: "Who is Pinocchio?" },
+      { value: 800, clue: "Locked in a tower, she let down her very long hair so others could climb up.", answer: "Who is Rapunzel?" },
+      { value: 1000, clue: "These German brothers published Hansel and Gretel and Snow White in the 1800s.", answer: "Who are the Brothers Grimm?" },
+    ],
+  },
+  {
+    name: "Name That Decade",
+    clues: [
+      { value: 200, clue: "Astronauts first walked on the Moon in this decade.", answer: "What are the 1960s?" },
+      { value: 400, clue: "Toy Story, the first fully computer-animated feature film, came out in this decade.", answer: "What are the 1990s?" },
+      { value: 600, clue: "The very first Star Wars movie hit theaters in this decade.", answer: "What are the 1970s?" },
+      { value: 800, clue: "The Nintendo Entertainment System (NES) launched in the U.S. in this decade.", answer: "What are the 1980s?" },
+      { value: 1000, clue: "YouTube launched and the first iPhone went on sale in this decade.", answer: "What are the 2000s?" },
+    ],
+  },
+  {
+    name: "Riddle Me This",
+    clues: [
+      { value: 200, clue: "I have hands but cannot clap. What am I?", answer: "What is a clock?" },
+      { value: 400, clue: "I get wetter the more I dry. What am I?", answer: "What is a towel?" },
+      { value: 600, clue: "I have 88 keys but can't open a single lock. What am I?", answer: "What is a piano?" },
+      { value: 800, clue: "The more of these you take, the more you leave behind.", answer: "What are footsteps?" },
+      { value: 1000, clue: "It comes once in a minute, twice in a moment, but never in a thousand years.", answer: "What is the letter M?" },
+    ],
+  },
+];
+
+const FAM1_FINAL: FinalClue = {
+  category: "Movie Firsts",
+  clue: "Released in 1937, this was Walt Disney's first full-length animated feature film.",
+  answer: "What is Snow White and the Seven Dwarfs?",
+};
+
+const DESI1_ROUND1: Category[] = [
+  {
+    name: "Bollywood",
+    clues: [
+      { value: 100, clue: "In this 1995 blockbuster, Raj and Simran fall in love on a trip across Europe.", answer: "What is Dilwale Dulhania Le Jayenge (DDLJ)?" },
+      { value: 200, clue: "Villain Mogambo's line Mogambo khush hua comes from this 1987 film.", answer: "What is Mr. India?" },
+      { value: 300, clue: "He directed the 1975 classic Sholay.", answer: "Who is Ramesh Sippy?" },
+      { value: 400, clue: "Aamir Khan's 2001 Oscar-nominated film is about villagers taking on British officers in a cricket match.", answer: "What is Lagaan?" },
+      { value: 500, clue: "Rancho, Farhan, and Raju are engineering students in this 2009 hit.", answer: "What is 3 Idiots?" },
+    ],
+  },
+  {
+    name: "Indian Pop Culture",
+    clues: [
+      { value: 100, clue: "Amitabh Bachchan hosts this quiz show, India's version of Who Wants to Be a Millionaire?", answer: "What is Kaun Banega Crorepati (KBC)?" },
+      { value: 200, clue: "This animated strongman boy from Dholakpur loves laddoos.", answer: "Who is Chhota Bheem?" },
+      { value: 300, clue: "Created by Anant Pai, this comic series retells Indian mythology, history, and folktales.", answer: "What is Amar Chitra Katha?" },
+      { value: 400, clue: "Hrithik Roshan plays this masked superhero in a film series that began in 2006.", answer: "Who is Krrish?" },
+      { value: 500, clue: "This bhangra-pop star had a huge 1995 hit with Bolo Ta Ra Ra.", answer: "Who is Daler Mehndi?" },
+    ],
+  },
+  {
+    name: "Classic Indian Ads",
+    clues: [
+      { value: 100, clue: "Amul's polka-dotted girl comes with this tagline: Utterly Butterly ___.", answer: "What is Delicious?" },
+      { value: 200, clue: "A twirling girl in a white frock starred in ads for this washing powder with a famous jingle.", answer: "What is Nirma?" },
+      { value: 300, clue: "Hamara Bajaj ads celebrated this two-wheeler, a fixture of Indian roads.", answer: "What is a scooter?" },
+      { value: 400, clue: "Neighbour's envy, owner's pride was the slogan of this TV brand with a horned devil mascot.", answer: "What is Onida?" },
+      { value: 500, clue: "In this chocolate's 1990s Kuch Khaas Hai ad, a young woman dances onto a cricket field.", answer: "What is Cadbury Dairy Milk?" },
+    ],
+  },
+  {
+    name: "Cricket",
+    clues: [
+      { value: 100, clue: "This Indian batting legend is nicknamed the Master Blaster.", answer: "Who is Sachin Tendulkar?" },
+      { value: 200, clue: "He captained India to its first Cricket World Cup win in 1983.", answer: "Who is Kapil Dev?" },
+      { value: 300, clue: "A standard over in cricket has this many legal balls.", answer: "What is six?" },
+      { value: 400, clue: "He captained India to the 2011 World Cup title, finishing the final with a six.", answer: "Who is MS Dhoni?" },
+      { value: 500, clue: "The Indian Premier League (IPL) played its first season in this year.", answer: "What is 2008?" },
+    ],
+  },
+  {
+    name: "Indian Food",
+    clues: [
+      { value: 100, clue: "This thin, crispy South Indian crepe is made from fermented rice and lentil batter.", answer: "What is a dosa?" },
+      { value: 200, clue: "These fried milk-dough balls are soaked in sugar syrup.", answer: "What are gulab jamun?" },
+      { value: 300, clue: "In Hindi, cumin seeds are called this.", answer: "What is jeera?" },
+      { value: 400, clue: "This yogurt drink from Punjab can be served sweet or salty.", answer: "What is lassi?" },
+      { value: 500, clue: "Hyderabad is famous for this layered dish of spiced rice and meat.", answer: "What is biryani?" },
+    ],
+  },
+];
+
+const DESI1_ROUND2: Category[] = [
+  {
+    name: "Filmi Songs",
+    clues: [
+      { value: 200, clue: "In Dil Se.., Shah Rukh Khan dances to Chaiyya Chaiyya on top of this moving vehicle.", answer: "What is a train?" },
+      { value: 400, clue: "This composer won two Oscars for Slumdog Millionaire, including one for Jai Ho.", answer: "Who is A.R. Rahman?" },
+      { value: 600, clue: "Kishore Kumar sang Mere Sapno Ki Rani for Rajesh Khanna in this 1969 film.", answer: "What is Aradhana?" },
+      { value: 800, clue: "Known as the Nightingale of India, she sang Lag Jaa Gale.", answer: "Who is Lata Mangeshkar?" },
+      { value: 1000, clue: "Naatu Naatu, winner of the 2023 Oscar for Best Original Song, is from this film.", answer: "What is RRR?" },
+    ],
+  },
+  {
+    name: "Old Doordarshan TV",
+    clues: [
+      { value: 200, clue: "Streets emptied on Sunday mornings in 1987 for Ramanand Sagar's TV version of this epic.", answer: "What is Ramayan?" },
+      { value: 400, clue: "This series, set in a fictional South Indian town, was based on R.K. Narayan's stories.", answer: "What is Malgudi Days?" },
+      { value: 600, clue: "Mukesh Khanna starred as this desi superhero in a 1997 series.", answer: "Who is Shaktimaan?" },
+      { value: 800, clue: "Launched in 1984, this is considered India's first TV soap opera.", answer: "What is Hum Log?" },
+      { value: 1000, clue: "Chaddi pehen ke phool khila hai was the theme song of The Jungle Book, starring this boy hero.", answer: "Who is Mowgli?" },
+    ],
+  },
+  {
+    name: "Ad Slogans & Jingles",
+    clues: [
+      { value: 200, clue: "This adhesive brand's ads promised a mazboot jod that will never break.", answer: "What is Fevicol?" },
+      { value: 400, clue: "Karram Kurram! sang the bunny in ads for this papad brand.", answer: "What is Lijjat Papad?" },
+      { value: 600, clue: "Vicco ___, nahin cosmetic. Fill in the blank from the famous jingle.", answer: "What is turmeric?" },
+      { value: 800, clue: "Liril soap's famous waterfall ad sold the freshness of this citrus fruit.", answer: "What is lime?" },
+      { value: 1000, clue: "This turbaned founder of MDH Masala starred in his own spice ads.", answer: "Who is Mahashay Dharampal Gulati?" },
+    ],
+  },
+  {
+    name: "Filmi Dialogues",
+    clues: [
+      { value: 200, clue: "Kitne aadmi the? asks this Sholay villain.", answer: "Who is Gabbar Singh?" },
+      { value: 400, clue: "Shashi Kapoor's line Mere paas maa hai comes from this 1975 film.", answer: "What is Deewaar?" },
+      { value: 600, clue: "Rajesh Khanna said Pushpa, I hate tears in this 1972 film.", answer: "What is Amar Prem?" },
+      { value: 800, clue: "Rishte mein toh hum tumhare baap lagte hain is Amitabh Bachchan's line from this 1988 film.", answer: "What is Shahenshah?" },
+      { value: 1000, clue: "Main apni favourite hoon! declares Kareena Kapoor's Geet in this 2007 film.", answer: "What is Jab We Met?" },
+    ],
+  },
+  {
+    name: "Bollywood Legends",
+    clues: [
+      { value: 200, clue: "Amitabh Bachchan's 1970s roles earned him this three-word nickname.", answer: "What is the Angry Young Man?" },
+      { value: 400, clue: "This actress, married to Dharmendra, is famously called the Dream Girl.", answer: "Who is Hema Malini?" },
+      { value: 600, clue: "Nicknamed Kaka, he is often called Hindi cinema's first superstar.", answer: "Who is Rajesh Khanna?" },
+      { value: 800, clue: "Her song Dhak Dhak Karne Laga from Beta made her the Dhak Dhak Girl.", answer: "Who is Madhuri Dixit?" },
+      { value: 1000, clue: "Raj Kapoor sang Mera Joota Hai Japani in this 1955 film.", answer: "What is Shree 420?" },
+    ],
+  },
+];
+
+const DESI1_FINAL: FinalClue = {
+  category: "Bollywood Firsts",
+  clue: "Released in 1913, Dadasaheb Phalke's film about an honest king is considered India's first full-length feature film.",
+  answer: "What is Raja Harishchandra?",
+};
+
 const GAME_SETS: GameSet[] = [
+  { id: "desi1", title: "Desi Night", ageRange: "teens + adults", round1: DESI1_ROUND1, round2: DESI1_ROUND2, final: DESI1_FINAL },
+  { id: "fam1", title: "Family Night", ageRange: "kids + adults", round1: FAM1_ROUND1, round2: FAM1_ROUND2, final: FAM1_FINAL },
   { id: "kq2", title: "Kid Quest #2", ageRange: "ages 8–15", round1: KQ2_ROUND1, round2: KQ2_ROUND2, final: KQ2_FINAL },
   { id: "kq1", title: "Kid Quest #1", ageRange: "ages 8–15", round1: ROUND1, round2: ROUND2, final: FINAL },
   // { id: "kq2", title: "Kid Quest #2", ageRange: "ages 6–9", round1: [...], round2: [...], final: {...} },
