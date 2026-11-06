@@ -490,7 +490,233 @@ const DESI1_FINAL: FinalClue = {
   answer: "What is Raja Harishchandra?",
 };
 
+const KQ3_ROUND1: Category[] = [
+  {
+    name: "Mythical Creatures",
+    clues: [
+      { value: 100, clue: "This fire-breathing creature of legend has the body of a lizard and huge, scaly wings.", answer: "What is a dragon?" },
+      { value: 200, clue: "In Greek myths, this woman had snakes for hair, and anyone who looked at her turned to stone.", answer: "Who is Medusa?" },
+      { value: 300, clue: "This one-horned horse-like creature appears in many fairy tales and fantasy stories.", answer: "What is a unicorn?" },
+      { value: 400, clue: "This mythical bird is said to burn up and then rise from its own ashes.", answer: "What is a phoenix?" },
+      { value: 500, clue: "Half eagle and half lion, this mythical beast often appears on coats of arms.", answer: "What is a griffin?" },
+    ],
+  },
+  {
+    name: "Famous Firsts",
+    clues: [
+      { value: 100, clue: "He was the first President of the United States.", answer: "Who is George Washington?" },
+      { value: 200, clue: "In 1961, this Soviet cosmonaut became the first human to travel into space.", answer: "Who is Yuri Gagarin?" },
+      { value: 300, clue: "In 1891 at a YMCA in Massachusetts, this Canadian teacher invented the sport of basketball.", answer: "Who is James Naismith?" },
+      { value: 400, clue: "In 1963, this Soviet cosmonaut became the first woman to travel into space.", answer: "Who is Valentina Tereshkova?" },
+      { value: 500, clue: "In 1947, this athlete became the first African American player in modern Major League Baseball.", answer: "Who is Jackie Robinson?" },
+    ],
+  },
+  {
+    name: "Kitchen Chemistry",
+    clues: [
+      { value: 100, clue: "When you freeze water, it turns into this solid form.", answer: "What is ice?" },
+      { value: 200, clue: "Yeast makes bread dough rise by producing this gas.", answer: "What is carbon dioxide?" },
+      { value: 300, clue: "At sea level, water boils at this temperature in degrees Celsius.", answer: "What is 100?" },
+      { value: 400, clue: "This white kitchen powder, also called sodium bicarbonate, helps cakes rise.", answer: "What is baking soda?" },
+      { value: 500, clue: "Salt sprinkled on icy sidewalks helps melt ice by lowering this temperature point.", answer: "What is the freezing point?" },
+    ],
+  },
+  {
+    name: "U.S. Symbols",
+    clues: [
+      { value: 100, clue: "This bald bird of prey is the national bird of the United States.", answer: "What is the bald eagle?" },
+      { value: 200, clue: "France gave this copper statue holding a torch to the United States as a gift.", answer: "What is the Statue of Liberty?" },
+      { value: 300, clue: "The faces of four U.S. presidents are carved into this mountain in South Dakota.", answer: "What is Mount Rushmore?" },
+      { value: 400, clue: "This cracked bell in Philadelphia is a famous symbol of American independence.", answer: "What is the Liberty Bell?" },
+      { value: 500, clue: "The U.S. Declaration of Independence was adopted in this year.", answer: "What is 1776?" },
+    ],
+  },
+  {
+    name: "School Smarts",
+    clues: [
+      { value: 100, clue: "A stop sign has this many sides.", answer: "What is eight?" },
+      { value: 200, clue: "There are this many degrees in a full circle.", answer: "What is 360?" },
+      { value: 300, clue: "In most U.S. classrooms, this many continents are taught.", answer: "What is seven?" },
+      { value: 400, clue: "An adult human skeleton has about this many bones.", answer: "What is 206?" },
+      { value: 500, clue: "The Roman numeral L stands for this number.", answer: "What is 50?" },
+    ],
+  },
+];
+
+const KQ3_ROUND2: Category[] = [
+  {
+    name: "Trees & Plants",
+    clues: [
+      { value: 200, clue: "This green pigment in leaves helps plants capture sunlight.", answer: "What is chlorophyll?" },
+      { value: 400, clue: "This carnivorous plant snaps shut when an insect lands on its trap.", answer: "What is a Venus flytrap?" },
+      { value: 600, clue: "These giant California trees are among the largest living things on Earth.", answer: "What are giant sequoias?" },
+      { value: 800, clue: "Some kinds of this hollow grass can grow more than a foot in a single day.", answer: "What is bamboo?" },
+      { value: 1000, clue: "The sticky liquid that drips from a cut maple tree is boiled down to make this sweet breakfast topping.", answer: "What is maple syrup?" },
+    ],
+  },
+  {
+    name: "Olympic Games",
+    clues: [
+      { value: 200, clue: "The modern Olympic Games were first held in this Greek city in 1896.", answer: "What is Athens?" },
+      { value: 400, clue: "Olympic medals come in gold, silver, and this third-place metal.", answer: "What is bronze?" },
+      { value: 600, clue: "The Olympic symbol is five interlocking ones of these.", answer: "What are rings?" },
+      { value: 800, clue: "The Summer Olympic Games are held every this many years.", answer: "What is four?" },
+      { value: 1000, clue: "In this Olympic winter sport, athletes race downhill on skis around gates.", answer: "What is alpine skiing?" },
+    ],
+  },
+  {
+    name: "Movie Moments",
+    clues: [
+      { value: 200, clue: "In Jurassic Park, this director brought dinosaurs back to life on screen in 1993.", answer: "Who is Steven Spielberg?" },
+      { value: 400, clue: "In The Wizard of Oz, Dorothy's dog is named this.", answer: "Who is Toto?" },
+      { value: 600, clue: "In Home Alone, this clever boy defends his house from two burglars.", answer: "Who is Kevin McCallister?" },
+      { value: 800, clue: "This polite bear from Peru wears a blue coat and loves marmalade sandwiches.", answer: "Who is Paddington?" },
+      { value: 1000, clue: "Mirabel has no magical gift in this 2021 Disney film about a family in Colombia.", answer: "What is Encanto?" },
+    ],
+  },
+  {
+    name: "Math Mysteries",
+    clues: [
+      { value: 200, clue: "A chessboard has this many squares.", answer: "What is 64?" },
+      { value: 400, clue: "If you multiply 12 by 12, you get this number.", answer: "What is 144?" },
+      { value: 600, clue: "There are this many minutes in one full day.", answer: "What is 1,440?" },
+      { value: 800, clue: "A leap year has this many days.", answer: "What is 366?" },
+      { value: 1000, clue: "The square root of 81 is this number.", answer: "What is 9?" },
+    ],
+  },
+  {
+    name: "Famous Explorers",
+    clues: [
+      { value: 200, clue: "In 1492, this explorer sailed west from Spain with the Niña, the Pinta, and the Santa María.", answer: "Who is Christopher Columbus?" },
+      { value: 400, clue: "This Venetian merchant traveled the Silk Road to China and wrote about the court of Kublai Khan.", answer: "Who is Marco Polo?" },
+      { value: 600, clue: "This Portuguese explorer's expedition was the first to sail all the way around the world.", answer: "Who is Ferdinand Magellan?" },
+      { value: 800, clue: "This Shoshone woman guided and translated for Lewis and Clark on their journey west.", answer: "Who is Sacagawea?" },
+      { value: 1000, clue: "In 1932, this American became the first woman to fly solo across the Atlantic Ocean.", answer: "Who is Amelia Earhart?" },
+    ],
+  },
+];
+
+const KQ3_FINAL: FinalClue = {
+  category: "Animal Speed",
+  clue: "This spotted big cat of Africa is the fastest land animal, reaching about 70 miles per hour in short bursts.",
+  answer: "What is a cheetah?",
+};
+
+const KQ4_ROUND1: Category[] = [
+  {
+    name: "Birds Everywhere",
+    clues: [
+      { value: 100, clue: "This bird of peace is often shown carrying an olive branch.", answer: "What is a dove?" },
+      { value: 200, clue: "This colorful male bird fans out a huge train of eye-spotted feathers.", answer: "What is a peacock?" },
+      { value: 300, clue: "These tiny birds can hover in place and even fly backward.", answer: "What are hummingbirds?" },
+      { value: 400, clue: "This bird is famous for copying human speech and saying Polly want a cracker.", answer: "What is a parrot?" },
+      { value: 500, clue: "This tall African bird is the largest living bird and cannot fly.", answer: "What is an ostrich?" },
+    ],
+  },
+  {
+    name: "On the Move",
+    clues: [
+      { value: 100, clue: "This two-wheeled vehicle that you pedal is a favorite way for kids to get around.", answer: "What is a bicycle?" },
+      { value: 200, clue: "This vehicle travels on rails and often pulls many passenger cars.", answer: "What is a train?" },
+      { value: 300, clue: "The Wright brothers' first successful plane at Kitty Hawk had this many wings stacked one above the other.", answer: "What is two?" },
+      { value: 400, clue: "This large ship carries people and cars across short stretches of water on a regular route.", answer: "What is a ferry?" },
+      { value: 500, clue: "In 1969, the Apollo 11 crew landed on the Moon in a craft nicknamed this.", answer: "What is Eagle?" },
+    ],
+  },
+  {
+    name: "Greek Myths",
+    clues: [
+      { value: 100, clue: "This king of the Greek gods ruled from Mount Olympus and threw lightning bolts.", answer: "Who is Zeus?" },
+      { value: 200, clue: "This Greek god of the sea carried a three-pronged spear called a trident.", answer: "Who is Poseidon?" },
+      { value: 300, clue: "This Greek goddess of wisdom is often shown with an owl.", answer: "Who is Athena?" },
+      { value: 400, clue: "This hero completed twelve nearly impossible labors, including fighting the Nemean Lion.", answer: "Who is Hercules?" },
+      { value: 500, clue: "The Greeks used this giant hollow wooden gift to sneak soldiers into the city of Troy.", answer: "What is the Trojan Horse?" },
+    ],
+  },
+  {
+    name: "Flags & Capitals",
+    clues: [
+      { value: 100, clue: "Japan's flag shows a red circle on a white background that stands for this.", answer: "What is the sun?" },
+      { value: 200, clue: "This city, not Sydney or Melbourne, is the capital of Australia.", answer: "What is Canberra?" },
+      { value: 300, clue: "This city, not Toronto, is the capital of Canada.", answer: "What is Ottawa?" },
+      { value: 400, clue: "The Union Jack is the flag of this country.", answer: "What is the United Kingdom?" },
+      { value: 500, clue: "People in Brazil mainly speak this language, not Spanish.", answer: "What is Portuguese?" },
+    ],
+  },
+  {
+    name: "Bugs & Creepy Crawlies",
+    clues: [
+      { value: 100, clue: "A spider has this many legs.", answer: "What is eight?" },
+      { value: 200, clue: "This red beetle with black spots is welcomed by gardeners as a helper against aphids.", answer: "What is a ladybug?" },
+      { value: 300, clue: "This insect starts as a caterpillar, then forms a chrysalis before becoming a winged adult.", answer: "What is a butterfly?" },
+      { value: 400, clue: "These insects light up at night using a chemical reaction in their bodies.", answer: "What are fireflies?" },
+      { value: 500, clue: "This hard-shelled insect rolls a ball of dung and was sacred in ancient Egypt.", answer: "What is a scarab (dung beetle)?" },
+    ],
+  },
+];
+
+const KQ4_ROUND2: Category[] = [
+  {
+    name: "Famous Buildings",
+    clues: [
+      { value: 200, clue: "This white marble mausoleum in Agra, India, was built by a Mughal emperor for his wife.", answer: "What is the Taj Mahal?" },
+      { value: 400, clue: "This famous leaning tower stands in the Italian city of Pisa.", answer: "What is the Leaning Tower of Pisa?" },
+      { value: 600, clue: "This ancient Roman arena once held gladiator fights and still stands in the center of Rome.", answer: "What is the Colosseum?" },
+      { value: 800, clue: "This bright-orange suspension bridge spans the entrance to San Francisco Bay.", answer: "What is the Golden Gate Bridge?" },
+      { value: 1000, clue: "This clock tower at the Palace of Westminster in London is widely known by this nickname.", answer: "What is Big Ben?" },
+    ],
+  },
+  {
+    name: "Kids' Authors",
+    clues: [
+      { value: 200, clue: "Theodor Geisel wrote The Cat in the Hat and Green Eggs and Ham under this pen name.", answer: "Who is Dr. Seuss?" },
+      { value: 400, clue: "This author wrote Charlotte's Web, about a pig named Wilbur and a clever barn spider.", answer: "Who is E. B. White?" },
+      { value: 600, clue: "This British author created the world of Narnia, including The Lion, the Witch and the Wardrobe.", answer: "Who is C. S. Lewis?" },
+      { value: 800, clue: "This Swedish author created Pippi Longstocking, a girl with super strength and a pet monkey.", answer: "Who is Astrid Lindgren?" },
+      { value: 1000, clue: "In this Roald Dahl book, a brilliant girl faces a terrible headmistress named Miss Trunchbull.", answer: "What is Matilda?" },
+    ],
+  },
+  {
+    name: "Instrument Zoo",
+    clues: [
+      { value: 200, clue: "This brass instrument has a slide you push in and out to change notes.", answer: "What is a trombone?" },
+      { value: 400, clue: "This woodwind instrument is often one of the first beginners learn and uses a single reed.", answer: "What is a clarinet?" },
+      { value: 600, clue: "This large string instrument is held between the knees and played with a bow.", answer: "What is a cello?" },
+      { value: 800, clue: "This percussion instrument is a set of tuned wooden bars hit with mallets.", answer: "What is a xylophone?" },
+      { value: 1000, clue: "This free-reed instrument with bellows is squeezed in and out while buttons or keys play the notes.", answer: "What is an accordion?" },
+    ],
+  },
+  {
+    name: "Timekeepers",
+    clues: [
+      { value: 200, clue: "There are this many hours in one day.", answer: "What is 24?" },
+      { value: 400, clue: "A regular year that is not a leap year has this many days.", answer: "What is 365?" },
+      { value: 600, clue: "This month is the only one with exactly 28 days in a common year.", answer: "What is February?" },
+      { value: 800, clue: "Before digital clocks, many people told time with this face-and-hands style of clock.", answer: "What is an analog clock?" },
+      { value: 1000, clue: "UTC is the common three-letter abbreviation for this worldwide time standard.", answer: "What is Coordinated Universal Time?" },
+    ],
+  },
+  {
+    name: "Extreme Earth",
+    clues: [
+      { value: 200, clue: "This desert in northern Africa is the largest hot desert on Earth.", answer: "What is the Sahara?" },
+      { value: 400, clue: "This waterfall in Venezuela is the world's tallest uninterrupted waterfall.", answer: "What is Angel Falls?" },
+      { value: 600, clue: "This salty body of water between Israel and Jordan is so dense that people float easily in it.", answer: "What is the Dead Sea?" },
+      { value: 800, clue: "This frozen continent around the South Pole has no permanent countries.", answer: "What is Antarctica?" },
+      { value: 1000, clue: "This Hawaiian volcano is Earth's largest active volcano by volume.", answer: "What is Mauna Loa?" },
+    ],
+  },
+];
+
+const KQ4_FINAL: FinalClue = {
+  category: "Storybook Creatures",
+  clue: "In J. K. Rowling's books, Harry Potter's loyal snowy owl is named this.",
+  answer: "Who is Hedwig?",
+};
+
 const GAME_SETS: GameSet[] = [
+  { id: "kq3", title: "Kid Quest #3", ageRange: "ages 8–15", round1: KQ3_ROUND1, round2: KQ3_ROUND2, final: KQ3_FINAL },
+  { id: "kq4", title: "Kid Quest #4", ageRange: "ages 8–15", round1: KQ4_ROUND1, round2: KQ4_ROUND2, final: KQ4_FINAL },
   { id: "desi1", title: "Desi Night", ageRange: "teens + adults", round1: DESI1_ROUND1, round2: DESI1_ROUND2, final: DESI1_FINAL },
   { id: "fam1", title: "Family Night", ageRange: "kids + adults", round1: FAM1_ROUND1, round2: FAM1_ROUND2, final: FAM1_FINAL },
   { id: "kq2", title: "Kid Quest #2", ageRange: "ages 8–15", round1: KQ2_ROUND1, round2: KQ2_ROUND2, final: KQ2_FINAL },
