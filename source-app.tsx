@@ -714,7 +714,120 @@ const KQ4_FINAL: FinalClue = {
   answer: "Who is Hedwig?",
 };
 
+const BOLLY1_ROUND1: Category[] = [
+  {
+    name: "Star Couples & Weddings",
+    clues: [
+      { value: 100, clue: "In 1991, years before anyone called him King Khan, this actor married Gauri in ceremonies friends still talk about.", answer: "Who is Shah Rukh Khan?" },
+      { value: 200, clue: "This Dilwale Dulhania Le Jayenge and Kuch Kuch Hota Hai star married Ajay Devgn in a February 1999 ceremony at his Mumbai home.", answer: "Who is Kajol?" },
+      { value: 300, clue: "This actress married Jonas Brothers singer Nick Jonas in a 2018 celebration at Jodhpur's Umaid Bhawan Palace.", answer: "Who is Priyanka Chopra?" },
+      { value: 400, clue: "Deepika Padukone married this Gully Boy and Bajirao Mastani star at Lake Como, Italy, in November 2018.", answer: "Who is Ranveer Singh?" },
+      { value: 500, clue: "In a surprise private ceremony in Italy in 2014, this Hum Dil De Chuke Sanam and Black star married Yash Raj Films boss Aditya Chopra.", answer: "Who is Rani Mukerji?" },
+    ],
+  },
+  {
+    name: "Star Kids",
+    clues: [
+      { value: 100, clue: "Shah Rukh and Gauri Khan's daughter played Veronica Lodge in Zoya Akhtar's 2023 Netflix film The Archies.", answer: "Who is Suhana Khan?" },
+      { value: 200, clue: "This son of Amitabh and Jaya Bachchan married former Miss World Aishwarya Rai in April 2007.", answer: "Who is Abhishek Bachchan?" },
+      { value: 300, clue: "This daughter of Saif Ali Khan and Amrita Singh made her Bollywood debut in the 2018 film Kedarnath.", answer: "Who is Sara Ali Khan?" },
+      { value: 400, clue: "This daughter of Sridevi and Boney Kapoor made her film debut in the 2018 drama Dhadak.", answer: "Who is Janhvi Kapoor?" },
+      { value: 500, clue: "This actor, the son of Rishi Kapoor and Neetu Singh and grandson of Raj Kapoor, played Sanjay Dutt in the 2018 biopic Sanju.", answer: "Who is Ranbir Kapoor?" },
+    ],
+  },
+  {
+    name: "Famous Debuts",
+    clues: [
+      { value: 100, clue: "Shah Rukh Khan's first Hindi film was this 1992 romance, opposite Rishi Kapoor and Divya Bharti.", answer: "What is Deewana?" },
+      { value: 200, clue: "Deepika Padukone made her Bollywood debut opposite Shah Rukh Khan in this 2007 Farah Khan film, a glittering ode to 1970s cinema.", answer: "What is Om Shanti Om?" },
+      { value: 300, clue: "This 2007 Sanjay Leela Bhansali romance marked the acting debuts of both Ranbir Kapoor and Sonam Kapoor.", answer: "What is Saawariya?" },
+      { value: 400, clue: "This 2012 Karan Johar film launched Alia Bhatt, Varun Dhawan, and Sidharth Malhotra as a lead trio.", answer: "What is Student of the Year?" },
+      { value: 500, clue: "After winning Miss World 2000, Priyanka Chopra made her Hindi film debut in this 2003 Sunny Deol spy thriller.", answer: "What is The Hero: Love Story of a Spy?" },
+    ],
+  },
+  {
+    name: "Name That Song",
+    clues: [
+      { value: 100, clue: "The opening words Bole chudiyan, bole kangana belong to this celebration song from Kabhi Khushi Kabhie Gham.", answer: "What is Bole Chudiyan?" },
+      { value: 200, clue: "The line Pehla nasha, pehla khumar opens this dreamy song from the 1992 film Jo Jeeta Wohi Sikandar.", answer: "What is Pehla Nasha?" },
+      { value: 300, clue: "Aishwarya Rai danced with Amitabh and Abhishek Bachchan in this 2005 number from Bunty Aur Babli, whose title means kohl-lined eyes.", answer: "What is Kajra Re?" },
+      { value: 400, clue: "The line Jiya jale, jaan jale, nainon tale opens this A.R. Rahman song from the 1998 film Dil Se..", answer: "What is Jiya Jale?" },
+      { value: 500, clue: "Kangana Ranaut's character and her friends dance to Poora London thumakda in this song from the 2014 film Queen.", answer: "What is London Thumakda?" },
+    ],
+  },
+  {
+    name: "Dialogue Baazi",
+    clues: [
+      { value: 100, clue: "This 1978 Amitabh Bachchan crime classic gave us the line Don ko pakadna mushkil hi nahi, namumkin hai.", answer: "What is Don?" },
+      { value: 200, clue: "In a 2007 tribute to Hindi cinema, Shah Rukh Khan promises, Picture abhi baaki hai mere dost.", answer: "What is Om Shanti Om?" },
+      { value: 300, clue: "This 2019 Vicky Kaushal war film made the chant How's the josh? a nationwide catchphrase.", answer: "What is Uri: The Surgical Strike?" },
+      { value: 400, clue: "Shah Rukh Khan's anti-hero says, Haar ke jeetne wale ko baazigar kehte hain, in this 1993 thriller.", answer: "What is Baazigar?" },
+      { value: 500, clue: "Rajesh Khanna's character tells Amitabh Bachchan, Babumoshai, zindagi badi honi chahiye, lambi nahi, in this 1971 classic.", answer: "What is Anand?" },
+    ],
+  },
+];
+
+const BOLLY1_ROUND2: Category[] = [
+  {
+    name: "Koffee With Karan",
+    clues: [
+      { value: 200, clue: "This Dharma Productions filmmaker has hosted the celebrity talk show Koffee With Karan since 2004.", answer: "Who is Karan Johar?" },
+      { value: 400, clue: "On the show, stars face this signature lightning-round of quick, often either-or questions.", answer: "What is Rapid Fire (the Rapid Fire round)?" },
+      { value: 600, clue: "The very first episode, which aired in 2004, featured Shah Rukh Khan and this frequent co-star, his partner from Dilwale Dulhania Le Jayenge.", answer: "Who is Kajol?" },
+      { value: 800, clue: "Karan Johar's memoir, whose title plays on a famous novel about a suitable boy, is called this.", answer: "What is An Unsuitable Boy?" },
+      { value: 1000, clue: "This high-energy star of Bajirao Mastani and Gully Boy appeared with Arjun Kapoor in a much-rewatched episode packed with impressions.", answer: "Who is Ranveer Singh?" },
+    ],
+  },
+  {
+    name: "Feuds & Friendships",
+    clues: [
+      { value: 200, clue: "This choreographer-director, a close friend of both Shah Rukh Khan and Karan Johar, directed Shah Rukh in Om Shanti Om and Happy New Year.", answer: "Who is Farah Khan?" },
+      { value: 400, clue: "After years of rumored rivalry, Shah Rukh Khan and this fellow Khan appeared together in a friendly, much-watched visit on Bigg Boss in 2015.", answer: "Who is Salman Khan?" },
+      { value: 600, clue: "Karan Johar has spoken on his own talk show about a falling-out and later patch-up with this close friend, the star of Kuch Kuch Hota Hai and Kabhi Khushi Kabhie Gham.", answer: "Who is Kajol?" },
+      { value: 800, clue: "Zoya Akhtar often collaborates with her brother, this director-actor behind Dil Chahta Hai and Rock On!!", answer: "Who is Farhan Akhtar?" },
+      { value: 1000, clue: "On Dilwale Dulhania Le Jayenge, this future filmmaker worked as an assistant director and popped up in a cameo as Raj's friend Rocky.", answer: "Who is Karan Johar?" },
+    ],
+  },
+  {
+    name: "Behind the Scenes",
+    clues: [
+      { value: 200, clue: "The memorable boys' trip in Zindagi Na Milegi Dobara was filmed across this European country, including La Tomatina and the Running of the Bulls.", answer: "What is Spain?" },
+      { value: 400, clue: "For Dangal, this actor first gained a large amount of weight and then slimmed down to play wrestler Mahavir Singh Phogat at two different ages.", answer: "Who is Aamir Khan?" },
+      { value: 600, clue: "Zoya Akhtar's 2019 film about a Mumbai slum rapper, inspired by real artists Divine and Naezy, starred Ranveer Singh and was titled this.", answer: "What is Gully Boy?" },
+      { value: 800, clue: "Sholay's village and dacoit hideout were filmed among the rocky granite hills of this place near Bengaluru, now a Karnataka district.", answer: "What is Ramanagara (Ramanagaram)?" },
+      { value: 1000, clue: "For the song Pyar Kiya To Darna Kya in this 1960 epic, director K. Asif built a lavish Sheesh Mahal, or mirror palace, set.", answer: "What is Mughal-e-Azam?" },
+    ],
+  },
+  {
+    name: "Box Office Bonanza",
+    clues: [
+      { value: 200, clue: "This 1994 Sooraj Barjatya wedding extravaganza, starring Salman Khan and Madhuri Dixit, was one of the biggest blockbusters of the 1990s.", answer: "What is Hum Aapke Hain Koun..! (HAHK)?" },
+      { value: 400, clue: "Released in January 2023, this Shah Rukh Khan spy thriller with Deepika Padukone and John Abraham was widely reported as the first Hindi film to gross over Rs. 1,000 crore worldwide.", answer: "What is Pathaan?" },
+      { value: 600, clue: "This 2016 Aamir Khan film about wrestler Mahavir Phogat and his daughters became a massive hit in China as well as India.", answer: "What is Dangal?" },
+      { value: 800, clue: "Ek Tha Tiger, War, Pathaan, and Tiger 3 all belong to this official shared franchise from Yash Raj Films.", answer: "What is the YRF Spy Universe?" },
+      { value: 1000, clue: "This 2001 Sunny Deol and Ameesha Patel partition-era drama was a huge hit, and its story returned in a 2023 sequel with a 2 in the title.", answer: "What is Gadar: Ek Prem Katha (Gadar)?" },
+    ],
+  },
+  {
+    name: "Nicknames & Aliases",
+    clues: [
+      { value: 200, clue: "Amitabh Bachchan is popularly known by this short alphabetical nickname.", answer: "What is Big B?" },
+      { value: 400, clue: "Shah Rukh Khan is widely known by this two-word royal nickname that starts with King.", answer: "What is King Khan?" },
+      { value: 600, clue: "Salman Khan's fans and co-stars often address him with this affectionate brother nickname, also heard in Bajrangi Bhaijaan.", answer: "What is Bhai (or Bhaijaan)?" },
+      { value: 800, clue: "This Kaho Naa... Pyaar Hai star is often nicknamed the Greek God of Bollywood for his dance-ready, chiseled looks.", answer: "Who is Hrithik Roshan?" },
+      { value: 1000, clue: "This legendary actor, who starred as the title character in the 1955 film Devdas, was known as Hindi cinema's Tragedy King.", answer: "Who is Dilip Kumar?" },
+    ],
+  },
+];
+
+const BOLLY1_FINAL: FinalClue = {
+  category: "The House That Yash Built",
+  clue: "Founded in 1970 by the director often called the King of Romance, this Mumbai studio — now run by his son Aditya — gave audiences Dilwale Dulhania Le Jayenge, Veer-Zaara, Chak De! India, and Pathaan.",
+  answer: "What is Yash Raj Films (YRF)?",
+};
+
 const GAME_SETS: GameSet[] = [
+  { id: "bolly1", title: "Bollywood Blockbuster Night", ageRange: "adults", round1: BOLLY1_ROUND1, round2: BOLLY1_ROUND2, final: BOLLY1_FINAL },
   { id: "kq3", title: "Kid Quest #3", ageRange: "ages 8–15", round1: KQ3_ROUND1, round2: KQ3_ROUND2, final: KQ3_FINAL },
   { id: "kq4", title: "Kid Quest #4", ageRange: "ages 8–15", round1: KQ4_ROUND1, round2: KQ4_ROUND2, final: KQ4_FINAL },
   { id: "desi1", title: "Desi Night", ageRange: "teens + adults", round1: DESI1_ROUND1, round2: DESI1_ROUND2, final: DESI1_FINAL },
