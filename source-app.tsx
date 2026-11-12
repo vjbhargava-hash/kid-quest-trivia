@@ -101,7 +101,7 @@ const ROUND2: Category[] = [
     clues: [
       { value: 200, clue: "Our solar system's largest planet is famous for its Great Red Spot.", answer: "What is Jupiter?" },
       { value: 400, clue: "In 1969, this astronaut became the first person to walk on the Moon.", answer: "Who is Neil Armstrong?" },
-      { value: 600, clue: "Once called the ninth planet, this icy world was renamed a dwarf planet in 2006.", answer: "What is Pluto?" },
+      { value: 600, clue: "Once called the ninth planet, this icy world was reclassified as a dwarf planet in 2006.", answer: "What is Pluto?" },
       { value: 800, clue: "Even though a light-year has the word year in it, it measures this.", answer: "What is distance?" },
       { value: 1000, clue: "Mercury is closest to the Sun, but thick clouds make this second planet the hottest of all.", answer: "What is Venus?" },
     ],
@@ -395,7 +395,7 @@ const DESI1_ROUND1: Category[] = [
       { value: 100, clue: "Amitabh Bachchan hosts this quiz show, India's version of Who Wants to Be a Millionaire?", answer: "What is Kaun Banega Crorepati (KBC)?" },
       { value: 200, clue: "This animated strongman boy from Dholakpur loves laddoos.", answer: "Who is Chhota Bheem?" },
       { value: 300, clue: "Created by Anant Pai, this comic series retells Indian mythology, history, and folktales.", answer: "What is Amar Chitra Katha?" },
-      { value: 400, clue: "Hrithik Roshan plays this masked superhero in a film series that began in 2006.", answer: "Who is Krrish?" },
+      { value: 400, clue: "Hrithik Roshan plays this masked superhero, who first appeared on screen in a 2006 film.", answer: "Who is Krrish?" },
       { value: 500, clue: "This bhangra-pop star had a huge 1995 hit with Bolo Ta Ra Ra.", answer: "Who is Daler Mehndi?" },
     ],
   },
@@ -445,7 +445,7 @@ const DESI1_ROUND2: Category[] = [
   {
     name: "Old Doordarshan TV",
     clues: [
-      { value: 200, clue: "Streets emptied on Sunday mornings in 1987 for Ramanand Sagar's TV version of this epic.", answer: "What is Ramayan?" },
+      { value: 200, clue: "Streets emptied on Sunday mornings in 1987 for Ramanand Sagar's TV version of this epic.", answer: "What is Ramayan (or Ramayana)?" },
       { value: 400, clue: "This series, set in a fictional South Indian town, was based on R.K. Narayan's stories.", answer: "What is Malgudi Days?" },
       { value: 600, clue: "Mukesh Khanna starred as this desi superhero in a 1997 series.", answer: "Who is Shaktimaan?" },
       { value: 800, clue: "Launched in 1984, this is considered India's first TV soap opera.", answer: "What is Hum Log?" },
@@ -479,7 +479,7 @@ const DESI1_ROUND2: Category[] = [
       { value: 400, clue: "This actress, married to Dharmendra, is famously called the Dream Girl.", answer: "Who is Hema Malini?" },
       { value: 600, clue: "Nicknamed Kaka, he is often called Hindi cinema's first superstar.", answer: "Who is Rajesh Khanna?" },
       { value: 800, clue: "Her song Dhak Dhak Karne Laga from Beta made her the Dhak Dhak Girl.", answer: "Who is Madhuri Dixit?" },
-      { value: 1000, clue: "Raj Kapoor sang Mera Joota Hai Japani in this 1955 film.", answer: "What is Shree 420?" },
+      { value: 1000, clue: "The song Mera Joota Hai Japani, picturized on Raj Kapoor, is from this 1955 film.", answer: "What is Shree 420?" },
     ],
   },
 ];
@@ -551,7 +551,7 @@ const KQ3_ROUND2: Category[] = [
       { value: 400, clue: "This carnivorous plant snaps shut when an insect lands on its trap.", answer: "What is a Venus flytrap?" },
       { value: 600, clue: "These giant California trees are among the largest living things on Earth.", answer: "What are giant sequoias?" },
       { value: 800, clue: "Some kinds of this hollow grass can grow more than a foot in a single day.", answer: "What is bamboo?" },
-      { value: 1000, clue: "The sticky liquid that drips from a cut maple tree is boiled down to make this sweet breakfast topping.", answer: "What is maple syrup?" },
+      { value: 1000, clue: "The sap that drips from a maple tree is boiled down to make this sweet breakfast topping.", answer: "What is maple syrup?" },
     ],
   },
   {
@@ -629,7 +629,7 @@ const KQ4_ROUND1: Category[] = [
       { value: 100, clue: "This king of the Greek gods ruled from Mount Olympus and threw lightning bolts.", answer: "Who is Zeus?" },
       { value: 200, clue: "This Greek god of the sea carried a three-pronged spear called a trident.", answer: "Who is Poseidon?" },
       { value: 300, clue: "This Greek goddess of wisdom is often shown with an owl.", answer: "Who is Athena?" },
-      { value: 400, clue: "This hero completed twelve nearly impossible labors, including fighting the Nemean Lion.", answer: "Who is Hercules?" },
+      { value: 400, clue: "This hero completed twelve nearly impossible labors, including fighting the Nemean Lion.", answer: "Who is Hercules (or Heracles)?" },
       { value: 500, clue: "The Greeks used this giant hollow wooden gift to sneak soldiers into the city of Troy.", answer: "What is the Trojan Horse?" },
     ],
   },
@@ -682,7 +682,7 @@ const KQ4_ROUND2: Category[] = [
       { value: 200, clue: "This brass instrument has a slide you push in and out to change notes.", answer: "What is a trombone?" },
       { value: 400, clue: "This woodwind instrument is often one of the first beginners learn and uses a single reed.", answer: "What is a clarinet?" },
       { value: 600, clue: "This large string instrument is held between the knees and played with a bow.", answer: "What is a cello?" },
-      { value: 800, clue: "This percussion instrument is a set of tuned wooden bars hit with mallets.", answer: "What is a xylophone?" },
+      { value: 800, clue: "This percussion instrument, whose name comes from the Greek for 'wood sound,' is a set of tuned wooden bars hit with mallets.", answer: "What is a xylophone?" },
       { value: 1000, clue: "This free-reed instrument with bellows is squeezed in and out while buttons or keys play the notes.", answer: "What is an accordion?" },
     ],
   },
@@ -722,7 +722,7 @@ const BOLLY1_ROUND1: Category[] = [
       { value: 200, clue: "This Dilwale Dulhania Le Jayenge and Kuch Kuch Hota Hai star married Ajay Devgn in a February 1999 ceremony at his Mumbai home.", answer: "Who is Kajol?" },
       { value: 300, clue: "This actress married Jonas Brothers singer Nick Jonas in a 2018 celebration at Jodhpur's Umaid Bhawan Palace.", answer: "Who is Priyanka Chopra?" },
       { value: 400, clue: "Deepika Padukone married this Gully Boy and Bajirao Mastani star at Lake Como, Italy, in November 2018.", answer: "Who is Ranveer Singh?" },
-      { value: 500, clue: "In a surprise private ceremony in Italy in 2014, this Hum Dil De Chuke Sanam and Black star married Yash Raj Films boss Aditya Chopra.", answer: "Who is Rani Mukerji?" },
+      { value: 500, clue: "In a surprise private ceremony in Italy in 2014, this Kuch Kuch Hota Hai and Black star married Yash Raj Films boss Aditya Chopra.", answer: "Who is Rani Mukerji?" },
     ],
   },
   {
@@ -802,7 +802,7 @@ const BOLLY1_ROUND2: Category[] = [
     name: "Box Office Bonanza",
     clues: [
       { value: 200, clue: "This 1994 Sooraj Barjatya wedding extravaganza, starring Salman Khan and Madhuri Dixit, was one of the biggest blockbusters of the 1990s.", answer: "What is Hum Aapke Hain Koun..! (HAHK)?" },
-      { value: 400, clue: "Released in January 2023, this Shah Rukh Khan spy thriller with Deepika Padukone and John Abraham was widely reported as the first Hindi film to gross over Rs. 1,000 crore worldwide.", answer: "What is Pathaan?" },
+      { value: 400, clue: "Released in January 2023, this Shah Rukh Khan spy thriller with Deepika Padukone and John Abraham became a huge worldwide hit and a flagship of the YRF Spy Universe.", answer: "What is Pathaan?" },
       { value: 600, clue: "This 2016 Aamir Khan film about wrestler Mahavir Phogat and his daughters became a massive hit in China as well as India.", answer: "What is Dangal?" },
       { value: 800, clue: "Ek Tha Tiger, War, Pathaan, and Tiger 3 all belong to this official shared franchise from Yash Raj Films.", answer: "What is the YRF Spy Universe?" },
       { value: 1000, clue: "This 2001 Sunny Deol and Ameesha Patel partition-era drama was a huge hit, and its story returned in a 2023 sequel with a 2 in the title.", answer: "What is Gadar: Ek Prem Katha (Gadar)?" },
@@ -828,13 +828,13 @@ const BOLLY1_FINAL: FinalClue = {
 
 const GAME_SETS: GameSet[] = [
   { id: "bolly1", title: "Bollywood Blockbuster Night", ageRange: "adults", round1: BOLLY1_ROUND1, round2: BOLLY1_ROUND2, final: BOLLY1_FINAL },
-  { id: "kq3", title: "Kid Quest #3", ageRange: "ages 8–15", round1: KQ3_ROUND1, round2: KQ3_ROUND2, final: KQ3_FINAL },
-  { id: "kq4", title: "Kid Quest #4", ageRange: "ages 8–15", round1: KQ4_ROUND1, round2: KQ4_ROUND2, final: KQ4_FINAL },
+  { id: "kq3", title: "Jeopardy Trivia #3", ageRange: "ages 8–15", round1: KQ3_ROUND1, round2: KQ3_ROUND2, final: KQ3_FINAL },
+  { id: "kq4", title: "Jeopardy Trivia #4", ageRange: "ages 8–15", round1: KQ4_ROUND1, round2: KQ4_ROUND2, final: KQ4_FINAL },
   { id: "desi1", title: "Desi Night", ageRange: "teens + adults", round1: DESI1_ROUND1, round2: DESI1_ROUND2, final: DESI1_FINAL },
   { id: "fam1", title: "Family Night", ageRange: "kids + adults", round1: FAM1_ROUND1, round2: FAM1_ROUND2, final: FAM1_FINAL },
-  { id: "kq2", title: "Kid Quest #2", ageRange: "ages 8–15", round1: KQ2_ROUND1, round2: KQ2_ROUND2, final: KQ2_FINAL },
-  { id: "kq1", title: "Kid Quest #1", ageRange: "ages 8–15", round1: ROUND1, round2: ROUND2, final: FINAL },
-  // { id: "kq2", title: "Kid Quest #2", ageRange: "ages 6–9", round1: [...], round2: [...], final: {...} },
+  { id: "kq2", title: "Jeopardy Trivia #2", ageRange: "ages 8–15", round1: KQ2_ROUND1, round2: KQ2_ROUND2, final: KQ2_FINAL },
+  { id: "kq1", title: "Jeopardy Trivia #1", ageRange: "ages 8–15", round1: ROUND1, round2: ROUND2, final: FINAL },
+  // { id: "kq2", title: "Jeopardy Trivia #2", ageRange: "ages 6–9", round1: [...], round2: [...], final: {...} },
 ];
 // ===================== END GAME SETS DATA BLOCK ======================
 
@@ -1404,7 +1404,7 @@ export default function App() {
                 alignItems: "flex-start",
               }}
             >
-              <span>Full screen isn't available in this browser. On iPhone: Share → Add to Home Screen, then open Kid Quest from the home screen icon for a full-screen app.</span>
+              <span>Full screen isn't available in this browser. On iPhone: Share → Add to Home Screen, then open Jeopardy Trivia from the home screen icon for a full-screen app.</span>
               <button type="button" style={{ ...ctlBtn, minHeight: 32, padding: "4px 10px" }} onClick={() => setFsNote(false)}>
                 OK
               </button>
@@ -1966,7 +1966,7 @@ function Game(props: GameProps) {
   if (phase === "setup") {
     return (
       <div style={root}>
-        <h1 style={titleStyle}>Kid Quest Trivia Night</h1>
+        <h1 style={titleStyle}>Jeopardy Trivia Night</h1>
         <p style={{ ...bigText, color: theme.text.secondary }}>
           A Jeopardy-style quiz for kids ages 8–11. Cast this Page to the TV, then tap from your phone.
         </p>
@@ -2233,11 +2233,11 @@ function Game(props: GameProps) {
   }
 
   if (phase === "round1") {
-    return renderBoard("Kid Quest · Round 1", "Values 100–500");
+    return renderBoard("Jeopardy Trivia · Round 1", "Values 100–500");
   }
 
   if (phase === "round2") {
-    return renderBoard("Kid Quest · Double Round", "Values 200–1000 · 1 Daily Double");
+    return renderBoard("Jeopardy Trivia · Double Round", "Values 200–1000 · 1 Daily Double");
   }
 
   if (phase === "finalCat") {
