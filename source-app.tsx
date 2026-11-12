@@ -827,7 +827,121 @@ const BOLLY1_FINAL: FinalClue = {
 };
 
 
+const BOLLY2_ROUND1: Category[] = [
+  {
+    name: "The New Sound",
+    clues: [
+      { value: 100, clue: "The 1990 musical smash Aashiqui, starring Rahul Roy and Anu Aggarwal, was scored by this composer duo, who then dominated the early 1990s.", answer: "Who are Nadeem-Shravan?" },
+      { value: 200, clue: "This composer duo scored Jo Jeeta Wohi Sikandar, including Pehla Nasha, and later Dilwale Dulhania Le Jayenge, including Tujhe Dekha To.", answer: "Who are Jatin-Lalit (or Jatin and Lalit Pandit)?" },
+      { value: 300, clue: "The music of the 1994 blockbuster Hum Aapke Hain Koun..!, including Didi Tera Devar Deewana, was composed by this music director, whose real name was Vijay Patil.", answer: "Who is Raamlaxman (or Ram Laxman, Raam Laxman)?" },
+      { value: 400, clue: "Released months after his death in January 1994, this composer won a posthumous Filmfare Award for Best Music Director for Vidhu Vinod Chopra's 1942: A Love Story.", answer: "Who is R.D. Burman (or Rahul Dev Burman, Pancham)?" },
+      { value: 500, clue: "Before the cult Dev.D soundtrack made his name, Amit Trivedi's first film score was this 2008 Raj Kumar Gupta thriller starring Rajeev Khandelwal.", answer: "What is Aamir?" },
+    ],
+  },
+  {
+    name: "First Frames",
+    clues: [
+      { value: 100, clue: "Before Om Shanti Om, Deepika Padukone made her acting debut in this 2006 Kannada film, which shares its title with a former Miss World.", answer: "What is Aishwarya?" },
+      { value: 200, clue: "Many know him for Jab We Met, but Imtiaz Ali's directorial debut was this 2005 romance, which also marked Abhay Deol's acting debut, opposite Ayesha Takia.", answer: "What is Socha Na Tha?" },
+      { value: 300, clue: "Zoya Akhtar's directorial debut was this 2009 film-industry drama starring Konkona Sen Sharma and Farhan Akhtar as struggling actors.", answer: "What is Luck By Chance?" },
+      { value: 400, clue: "Sriram Raghavan's directorial debut was this 2004 Ram Gopal Varma-produced thriller starring Saif Ali Khan and Urmila Matondkar.", answer: "What is Ek Hasina Thi?" },
+      { value: 500, clue: "Meghna Gulzar's directorial debut was this 2002 film about friendship and surrogate motherhood, starring Tabu, Sushmita Sen, and Sanjay Suri.", answer: "What is Filhaal (or Filhaal...)?" },
+    ],
+  },
+  {
+    name: "After the Original",
+    clues: [
+      { value: 100, clue: "Vishal Bhardwaj's 2006 film Omkara, starring Ajay Devgn and Kareena Kapoor, is an adaptation of this Shakespeare tragedy, set in the Uttar Pradesh hinterland.", answer: "What is Othello?" },
+      { value: 200, clue: "Sooraj Barjatya's 1994 blockbuster Hum Aapke Hain Koun..! is a remake of this 1982 Rajshri film, starring Sachin Pilgaonkar and Sadhana Singh.", answer: "What is Nadiya Ke Paar?" },
+      { value: 300, clue: "Abhishek Kapoor's 2013 film Kai Po Che, starring Sushant Singh Rajput, Rajkummar Rao, and Amit Sadh, is based on this Chetan Bhagat novel.", answer: "What is The 3 Mistakes of My Life?" },
+      { value: 400, clue: "Anil Kapoor's 2001 film Nayak: The Real Hero is a Hindi remake of this 1999 Shankar Tamil film starring Rajinikanth.", answer: "What is Mudhalvan?" },
+      { value: 500, clue: "Priyadarshan's 2007 film Bhool Bhulaiyaa, starring Akshay Kumar and Vidya Balan, is a Hindi remake of this 1993 Malayalam classic.", answer: "What is Manichitrathazhu (or Manichithrathazhu)?" },
+    ],
+  },
+  {
+    name: "Studio Secrets",
+    clues: [
+      { value: 100, clue: "This 1994 Rajkumar Santoshi comedy, starring Aamir Khan and Salman Khan, was a box-office disappointment on release and later became a cult favourite.", answer: "What is Andaz Apna Apna?" },
+      { value: 200, clue: "Anurag Kashyap filmed this coal-mafia saga as one continuous work of about five hours, then released it in 2012 as two parts a few weeks apart.", answer: "What is Gangs of Wasseypur?" },
+      { value: 300, clue: "Mani Ratnam's first film originally made in Hindi, not a Tamil film later dubbed, was this 1998 Shah Rukh Khan drama with music by A.R. Rahman.", answer: "What is Dil Se.. (or Dil Se)?" },
+      { value: 400, clue: "The Sufi song Kun Faya Kun from Imtiaz Ali's Rockstar was filmed at this Delhi dargah, where Ranbir Kapoor stayed during the shoot.", answer: "What is Hazrat Nizamuddin Dargah (or Nizamuddin Dargah, Nizamuddin Auliya dargah)?" },
+      { value: 500, clue: "Meghna Gulzar's 2018 spy film Raazi, starring Alia Bhatt, is based on this Harinder Sikka novel about a Kashmiri spy before the 1971 war.", answer: "What is Calling Sehmat?" },
+    ],
+  },
+  {
+    name: "Credits Roll",
+    clues: [
+      { value: 100, clue: "This screenwriter, the mother of Farhan and Zoya Akhtar, wrote Yash Chopra's Lamhe in 1991 and Darr in 1993.", answer: "Who is Honey Irani?" },
+      { value: 200, clue: "This lyricist, a frequent Imtiaz Ali collaborator, wrote the words to Rockstar's songs, including Kun Faya Kun and Nadaan Parinde.", answer: "Who is Irshad Kamil?" },
+      { value: 300, clue: "This writer of Ram Gopal Varma's Company also wrote Khosla Ka Ghosla and Chak De! India.", answer: "Who is Jaideep Sahni?" },
+      { value: 400, clue: "This former advertising writer wrote Vicky Donor, Piku, and October for director Shoojit Sircar.", answer: "Who is Juhi Chaturvedi?" },
+      { value: 500, clue: "This screenwriter co-wrote Lage Raho Munna Bhai, 3 Idiots, and PK with Rajkumar Hirani.", answer: "Who is Abhijat Joshi?" },
+    ],
+  },
+];
+
+const BOLLY2_ROUND2: Category[] = [
+  {
+    name: "Called Action",
+    clues: [
+      { value: 200, clue: "Sujoy Ghosh's directorial debut was this 2003 music-themed film, a tribute to R.D. Burman, which also brought the duo Vishal-Shekhar to wide notice.", answer: "What is Jhankaar Beats?" },
+      { value: 400, clue: "Rajkumar Santoshi's directorial debut was this 1990 Sunny Deol film, which won the National Award for Best Popular Film Providing Wholesome Entertainment.", answer: "What is Ghayal?" },
+      { value: 600, clue: "Vikramaditya Motwane's directorial debut was this 2010 coming-of-age film, produced by Anurag Kashyap, which screened in Un Certain Regard at Cannes.", answer: "What is Udaan?" },
+      { value: 800, clue: "Years before Lagaan, Ashutosh Gowariker directed this 1995 Aamir Khan crime thriller.", answer: "What is Baazi?" },
+      { value: 1000, clue: "Before Vicky Donor and Piku, Shoojit Sircar's directorial debut was this 2005 Kashmir-set film starring Jimmy Sheirgill and Minissha Lamba.", answer: "What is Yahaan (or Yahan)?" },
+    ],
+  },
+  {
+    name: "Trophy Case",
+    clues: [
+      { value: 200, clue: "Vidya Balan won the National Film Award for Best Actress for this 2011 film, in which she played a character inspired by the South Indian star Silk Smitha.", answer: "What is The Dirty Picture?" },
+      { value: 400, clue: "The trio Shankar-Ehsaan-Loy won the National Film Award for Best Music Direction for this 2003 Yash Raj film set in New York.", answer: "What is Kal Ho Naa Ho?" },
+      { value: 600, clue: "In 2009, this sound designer, known for his work in Hindi cinema, shared the Oscar for Best Sound Mixing for Slumdog Millionaire, the same night A.R. Rahman and Gulzar also won.", answer: "Who is Resul Pookutty?" },
+      { value: 800, clue: "This 2015 Neeraj Ghaywan debut, set in Varanasi and written with poet Varun Grover, premiered in Un Certain Regard at Cannes.", answer: "What is Masaan?" },
+      { value: 1000, clue: "Before he directed Maqbool, Vishal Bhardwaj won the National Award for Best Music Direction for this 1999 Vinay Shukla film starring Shabana Azmi as a woman who becomes a gangster-politician.", answer: "What is Godmother?" },
+    ],
+  },
+  {
+    name: "Cut and Print",
+    clues: [
+      { value: 200, clue: "Before directing Munna Bhai M.B.B.S., Rajkumar Hirani was the credited editor of this 2000 Vidhu Vinod Chopra film, set in Kashmir, starring Hrithik Roshan and Sanjay Dutt.", answer: "What is Mission Kashmir?" },
+      { value: 400, clue: "Although Karan Johar wrote and produced Kal Ho Naa Ho, this filmmaker, an assistant on Karan's early films, directed it.", answer: "Who is Nikkhil Advani (or Nikhil Advani)?" },
+      { value: 600, clue: "Although Shoojit Sircar produced the 2016 courtroom drama Pink, it was directed by this filmmaker.", answer: "Who is Aniruddha Roy Chowdhury (or Aniruddha Roychowdhury)?" },
+      { value: 800, clue: "Before Chak De! India, Shimit Amin directed this 2004 crime film starring Nana Patekar as Inspector Sadhu Agashe, an encounter specialist; its title means fifty-six so far.", answer: "What is Ab Tak Chhappan?" },
+      { value: 1000, clue: "The 2015 Hindi remake of the Malayalam thriller Drishyam, starring Ajay Devgn, was directed by this filmmaker, who also made Mumbai Meri Jaan.", answer: "Who is Nishikant Kamat?" },
+    ],
+  },
+  {
+    name: "Hear That Line",
+    clues: [
+      { value: 200, clue: "The song Iktara, sung by Kavita Seth and composed by Amit Trivedi, is from this 2009 Ayan Mukerji film starring Ranbir Kapoor and Konkona Sen Sharma.", answer: "What is Wake Up Sid?" },
+      { value: 400, clue: "Javed Ali sang Jashn-e-Bahaara in this 2008 Ashutosh Gowariker historical, with music by A.R. Rahman.", answer: "What is Jodhaa Akbar (or Jodha Akbar)?" },
+      { value: 600, clue: "Lata Mangeshkar and A.R. Rahman sang the elegiac Luka Chuppi, a mother-and-son song, in this 2006 Rakeysh Omprakash Mehra film.", answer: "What is Rang De Basanti?" },
+      { value: 800, clue: "The Punjabi folk song Patakha Guddi, from Imtiaz Ali's 2014 film Highway, was sung by this sister duo.", answer: "Who are the Nooran Sisters (or Jyoti and Sultana Nooran)?" },
+      { value: 1000, clue: "Swanand Kirkire wrote and sang Bawra Mann for this 2005 Sudhir Mishra film, set around the Emergency and starring Shiney Ahuja, Chitrangada Singh, and Kay Kay Menon.", answer: "What is Hazaaron Khwaishein Aisi?" },
+    ],
+  },
+  {
+    name: "Hidden Chapters",
+    clues: [
+      { value: 200, clue: "Vikramaditya Motwane has said that this 2013 period romance, starring Ranveer Singh and Sonakshi Sinha, was inspired by O. Henry's short story The Last Leaf.", answer: "What is Lootera?" },
+      { value: 400, clue: "Sandeep Reddy Vanga's 2019 film Kabir Singh, starring Shahid Kapoor, is a Hindi remake of this 2017 Telugu film that Vanga also directed, starring Vijay Deverakonda.", answer: "What is Arjun Reddy?" },
+      { value: 600, clue: "Dibakar Banerjee's directorial debut was this 2006 Delhi comedy, written by Jaideep Sahni, about a middle-class family fighting a property shark, starring Anupam Kher and Boman Irani.", answer: "What is Khosla Ka Ghosla (or Khosla Ka Ghosla!)?" },
+      { value: 800, clue: "This 2018 period horror film, starring Sohum Shah, follows a man's obsession with cursed treasure and a deity named Hastar.", answer: "What is Tumbbad?" },
+      { value: 1000, clue: "Sanjay Leela Bhansali's Gangubai Kathiawadi is based on a chapter in this book by S. Hussain Zaidi and Jane Borges about women in Mumbai's underworld.", answer: "What is Mafia Queens of Mumbai?" },
+    ],
+  },
+];
+
+const BOLLY2_FINAL: FinalClue = {
+  category: "Held From Release",
+  clue: "Anurag Kashyap adapted this S. Hussain Zaidi book about the 1993 Bombay bombings into a film completed in 2004 and held from Indian theatres by court order until 2007.",
+  answer: "What is Black Friday?",
+};
+
+
 const GAME_SETS: GameSet[] = [
+  { id: "bolly2", title: "Bollywood Blockbuster Night: The Modern Era", ageRange: "adults", round1: BOLLY2_ROUND1, round2: BOLLY2_ROUND2, final: BOLLY2_FINAL },
   { id: "bolly1", title: "Bollywood Blockbuster Night", ageRange: "adults", round1: BOLLY1_ROUND1, round2: BOLLY1_ROUND2, final: BOLLY1_FINAL },
   { id: "kq3", title: "Jeopardy Trivia #3", ageRange: "ages 8–15", round1: KQ3_ROUND1, round2: KQ3_ROUND2, final: KQ3_FINAL },
   { id: "kq4", title: "Jeopardy Trivia #4", ageRange: "ages 8–15", round1: KQ4_ROUND1, round2: KQ4_ROUND2, final: KQ4_FINAL },
